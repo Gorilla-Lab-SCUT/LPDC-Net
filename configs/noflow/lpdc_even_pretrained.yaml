@@ -1,0 +1,24 @@
+method: lpdc
+data:
+  test_split: test #test_new_individual
+  n_intervals: 1
+model:
+  encoder: 
+  encoder_kwargs:
+    hidden_dim: 128
+  encoder_temporal: pointnet_spatiotemporal
+  encoder_temporal_kwargs:
+    hidden_dim: 128
+  decoder: simple_local
+  decoder_kwargs:
+    hidden_size: 128
+  velocity_field: concat
+  velocity_field_kwargs:
+    hidden_size: 128
+  c_dim: 128
+  loss_corr: true
+  loss_transform_forward: true
+training:
+  out_dir:  out/pointcloud/lpdc_even_pretrained
+test:
+  model_file: lpdc_even_pretrained.pt

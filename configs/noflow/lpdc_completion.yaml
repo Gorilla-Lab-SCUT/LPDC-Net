@@ -1,0 +1,32 @@
+method: lpdc_uneven
+data:
+  test_split: test #test_new_individual
+  n_intervals: 1
+  select_steps: [0,10,19,29,44,49]
+  length_sequence: 50
+  pointcloud_seq_incomplete_folder: incompcl_seq
+  completion: true
+model:
+  encoder: 
+  encoder_kwargs:
+    hidden_dim: 128
+  encoder_temporal: pointnet_spatiotemporal2
+  encoder_temporal_kwargs:
+    hidden_dim: 128
+  decoder: simple_local
+  decoder_kwargs:
+    hidden_size: 128
+  velocity_field: concat
+  velocity_field_kwargs:
+    hidden_size: 128
+  c_dim: 128
+  loss_corr: true
+  loss_transform_forward: true
+training:
+  model_selection_metric: iou
+  model_selection_mode: maximize
+  batch_size: 16
+  validate_every: 10000
+  backup_every: 2000 ##
+  learning_rate: 0.0001
+  out_dir:  out/pointcloud/lpdc_completion

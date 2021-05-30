@@ -1,0 +1,9 @@
+inherit_from: configs/noflow/lpdc_even_pretrained.yaml
+data:
+  classes: ['Demo']
+  test_split: null
+  offset_sequence: 0
+training:
+  out_dir: out/demo
+test:
+  model_file: lpdc_even_pretrained.pt
