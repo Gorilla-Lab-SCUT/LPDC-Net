@@ -1,8 +1,4 @@
 # LPDC-Net
-<p align="center">
- <img src="./animations/teaser.png" />
-</p>
-
 [Homepage](https://tangjiapeng.github.io/LPDC-Net) | [Paper-Pdf](https://arxiv.org/pdf/2103.16341.pdf)
 
 This repository contains the code for the project **LPDC-Net - Learning Parallel Dense Correspondence from Spatio-Temporal Descriptors
@@ -84,7 +80,7 @@ When you have installed all dependencies and obtained the preprocessed data, you
 
 <div style="text-align: center">
 <img src="animations/input_full.gif" width="256"/>
-<img src="animations/oflow_full.gif" width="256"/>
+<img src="animations/output_full.gif" width="256"/>
 </div>
 
 To start the normal mesh generation process using a trained model, use
