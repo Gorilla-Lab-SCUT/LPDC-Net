@@ -1,5 +1,5 @@
 # LPDC-Net
-[Homepage](https://tangjiapeng.github.io/LPDC-Net) | [Paper-Pdf](https://arxiv.org/pdf/2103.16341.pdf)
+[Homepage](https://tangjiapeng.github.io/LPDC-Net) | [Paper-Pdf](https://arxiv.org/pdf/2103.16341.pdf) | [Video](https://youtu.be/dhmuuzfRpNs)
 
 This repository contains the code for the project **LPDC-Net - Learning Parallel Dense Correspondence from Spatio-Temporal Descriptors
 for Efficient and Robust 4D Reconstruction** 
