@@ -135,9 +135,10 @@ Most of the code is borrowed from [Occupancy Flow](https://github.com/autonomous
 
 If you find our code or paper useful, please consider citing
 
-    @article{tang2021learning,
+    @inproceedings{tang2021learning,
       title={Learning Parallel Dense Correspondence from Spatio-Temporal Descriptors for Efficient and Robust 4D Reconstruction},
       author={Tang, Jiapeng and Xu, Dan and Jia, Kui and Zhang, Lei},
-      journal={arXiv preprint arXiv:2103.16341},
+      booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+      pages={6022--6031},
       year={2021}
     }
